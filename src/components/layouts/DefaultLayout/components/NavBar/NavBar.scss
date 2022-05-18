@@ -1,0 +1,42 @@
+header {
+  padding: 1.6rem 2.4rem;
+  border-bottom: 1px solid var(--color-grayDark);
+  @media (min-width: 768px) {
+    padding: 3.2rem 2.4rem 2.7rem 2.4rem;
+  }
+  @media (min-width: 1025px) {
+    padding: 0 4.4rem 0 3.2rem;
+    height: 85px;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (min-width: 768px) {
+      flex-flow: column;
+    }
+    @media (min-width: 1025px) {
+      flex-flow: row;
+      height: 100%;
+      max-width: 144rem;
+      margin: 0 auto;
+    }
+    h1 {
+      all: unset;
+      a {
+        font-size: 2.8rem;
+        font-family: var(--font-secondary);
+        color: var(--color-white);
+        text-transform: uppercase;
+        letter-spacing: -1.05px;
+        &:focus {
+          outline: none;
+        }
+        &:focus-visible {
+          outline: 2px dashed var(--color-redLight);
+          outline-offset: 3px;
+        }
+      }
+    }
+  }
+}

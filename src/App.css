@@ -1,0 +1,66 @@
+/* import Antonio font */
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700&display=swap');
+/* normalize css */
+@import-normalize;
+
+/* variable */
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-whiteAlpha50: hsla(0, 0%, 100%, 0.5);
+  --color-whiteAlpha75: hsla(0, 0%, 100%, 0.75);
+  --color-black: hsl(240, 67%, 8%);
+  --color-grayDark: hsl(240, 67%, 8%);
+  --color-grayLight: hsl(240, 6%, 54%);
+  --color-turquoise: hsl(194, 48%, 49%);
+  --color-orangeLight: hsl(33, 82%, 61%);
+  --color-orangeDark: hsl(10, 63%, 51%);
+  --color-purple: hsl(263, 67%, 51%);
+  --color-redLight: hsl(2, 68%, 53%);
+  --color-redDark: hsl(17, 73%, 46%);
+  --color-green: hsl(169, 73%, 44%);
+  --color-blue: hsl(222, 87%, 56%);
+
+  --font-primary: 'League Spartan', sans-serif;
+  --font-secondary: 'Antonio', sans-serif;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+html:focus-within {
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+}
+ul,
+ol {
+  list-style: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  font-family: var(--font-primary);
+  font-size: 1.4rem;
+  counter-reset: tab;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
