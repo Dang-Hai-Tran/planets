@@ -10,7 +10,7 @@
   --color-whiteAlpha50: hsla(0, 0%, 100%, 0.5);
   --color-whiteAlpha75: hsla(0, 0%, 100%, 0.75);
   --color-black: hsl(240, 67%, 8%);
-  --color-grayDark: hsl(240, 67%, 8%);
+  --color-grayDark: hsl(240, 17%, 26%);
   --color-grayLight: hsl(240, 6%, 54%);
   --color-turquoise: hsl(194, 48%, 49%);
   --color-orangeLight: hsl(33, 82%, 61%);
@@ -33,32 +33,21 @@
 }
 html {
   font-size: 62.5%;
+  text-rendering: optimizeSpeed;
 }
 html:focus-within {
   scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
 }
 ul,
 ol {
   list-style: none;
 }
-@media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-    scroll-behavior: auto;
-  }
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
+
 body {
   font-family: var(--font-primary);
   font-size: 1.4rem;
   counter-reset: tab;
+  color: var(--color-white);
 }
 a {
   text-decoration: none;

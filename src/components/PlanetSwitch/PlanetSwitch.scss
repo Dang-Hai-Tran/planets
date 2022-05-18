@@ -1,0 +1,123 @@
+.planet {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 1px solid rgba(102, 166, 229, 0.12);
+  border-radius: 100rem;
+  transform: translate(-50%, -50%);
+  transition: border 300ms ease;
+  &::before {
+    position: absolute;
+    content: '';
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10rem;
+    transition: transform 300ms ease;
+  }
+  @keyframes orbit {
+    0% {
+      transform: translate(-50%, -50%) rotate(0);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(-360deg);
+    }
+  }
+  &.Mercury {
+    width: 10rem;
+    height: 10rem;
+    animation: orbit 8.797s linear infinite;
+    z-index: 100;
+
+    &::before {
+      height: 0.8rem;
+      width: 0.8rem;
+      background-image: url('../../assets/images/planet-mercury.svg');
+      background-size: cover;
+    }
+  }
+  &.Venus {
+    width: 13rem;
+    height: 13rem;
+    animation: orbit 22.47s linear infinite;
+    z-index: 99;
+
+    &::before {
+      height: 1.5rem;
+      width: 1.5rem;
+      background-image: url('../../assets/images/planet-venus.svg');
+      background-size: cover;
+    }
+  }
+  &.Earth {
+    width: 17.5rem;
+    height: 17.5rem;
+    animation: orbit 36.536s linear infinite;
+    z-index: 98;
+    &::before {
+      height: 1.6rem;
+      width: 1.6rem;
+      background-image: url('../../assets/images/planet-earth.svg');
+      background-size: cover;
+    }
+  }
+  &.Mars {
+    width: 22rem;
+    height: 22rem;
+    animation: orbit 68.62s linear infinite;
+    z-index: 97;
+    &::before {
+      width: 1.2rem;
+      height: 1.2rem;
+      background-image: url('../../assets/images/planet-mars.svg');
+      background-size: cover;
+    }
+  }
+  &.Jupiter {
+    width: 37rem;
+    height: 37rem;
+    animation: orbit 432.89s linear infinite;
+    z-index: 96;
+    &::before {
+      width: 3.6rem;
+      height: 3.6rem;
+      background-image: url('../../assets/images/planet-jupiter.svg');
+      background-size: cover;
+    }
+  }
+  &.Saturn {
+    width: 47rem;
+    height: 47rem;
+    animation: orbit 1075.29s linear infinite;
+    z-index: 95;
+    &::before {
+      width: 5.5rem;
+      height: 5.5rem;
+      background-image: url('../../assets/images/planet-saturn.svg');
+      background-size: cover;
+    }
+  }
+  &.Uranus {
+    width: 55rem;
+    height: 55rem;
+    animation: orbit 3066.365s linear infinite;
+    z-index: 94;
+    &::before {
+      width: 2rem;
+      height: 2rem;
+      background-image: url('../../assets/images/planet-uranus.svg');
+      background-size: cover;
+    }
+  }
+  &.Neptune {
+    width: 66rem;
+    height: 66rem;
+    animation: orbit 6014.835s linear infinite;
+    z-index: 93;
+    &::before {
+      width: 2rem;
+      height: 2rem;
+      background-image: url('../../assets/images/planet-neptune.svg');
+      background-size: cover;
+    }
+  }
+}

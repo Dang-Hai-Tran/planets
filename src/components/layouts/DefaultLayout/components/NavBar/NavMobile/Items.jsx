@@ -14,7 +14,7 @@ const Items = ({ restoreToDefault }) => {
           key={planet.id}
           initial={{ x: '100vw' }}
           animate={{ x: '0vw' }}
-          transition={{ ease: [0.06, 0.9, 1, 0.98], duration: 0.7, delay: `(${planet.id * 5 + 0.5})/100` }}>
+          transition={{ ease: [0.06, 0.9, 1, 0.98], duration: 0.7, delay: `${(planet.id * 5 + 0.5) / 100}` }}>
           <NavLink to={planet.path} color={planet.color} onClick={restoreToDefault}>
             <div className="navMobile__item__before" style={{ backgroundColor: `${planet.color}` }}></div>
             {planet.name}

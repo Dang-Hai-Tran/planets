@@ -1,4 +1,14 @@
 .defaultLayout__container {
+  position: relative;
   min-height: 100vh;
-  background-color: #070722;
+  background-color: var(--color-black);
+  overflow: hidden;
+  .container-after {
+    position: absolute;
+    height: 2px;
+    width: 2px;
+    top: -2px;
+    background: white;
+    border-radius: 100px;
+  }
 }
