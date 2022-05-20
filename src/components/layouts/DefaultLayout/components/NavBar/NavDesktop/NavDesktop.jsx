@@ -12,7 +12,7 @@ const NavDesktop = ({ pathName, activePlanet, onHover }) => {
             <NavLink
               to={planet.path}
               className={planet.path === pathName || planet.path === activePlanet ? 'isActive' : ''}
-              onMouseOver={() => onHover(planet.path)}
+              onMouseEnter={() => onHover(planet.path)}
               onMouseLeave={() => onHover(false)}
               onFocus={() => onHover(planet.path)}
               onBlur={() => onHover(false)}>

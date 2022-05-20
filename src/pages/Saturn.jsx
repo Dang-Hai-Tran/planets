@@ -1,7 +1,9 @@
 import React from 'react';
+import PlanetSection from '../components/PlanetSection/PlanetSection';
+import { saturn } from '../constants/data';
 
 const Saturn = () => {
-  return <div>Saturn</div>;
+  return <PlanetSection planetData={saturn} />;
 };
 
 export default Saturn;

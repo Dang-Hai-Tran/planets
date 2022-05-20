@@ -12,6 +12,9 @@ const NavBar = (props) => {
 
   useEffect(() => {
     window.addEventListener('resize', () => setWindowWidth(window.innerWidth));
+    return () => {
+      window.removeEventListener('resize', () => setWindowWidth(window.innerWidth));
+    };
   }, [windowWidth]);
 
   const containerVariants = {

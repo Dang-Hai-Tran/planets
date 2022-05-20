@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { planets } from '../constants/data';
 import PlanetSwitch from '../components/PlanetSwitch/PlanetSwitch';
 import './Home.scss';
+import { asteroidsBackground } from '../constants/asteroidsBackground';
 
 const Home = ({ activePlanet }) => {
   const containerVariants = {
@@ -30,6 +31,9 @@ const Home = ({ activePlanet }) => {
       {planets.map((planet) => (
         <PlanetSwitch planet={planet} key={`planet-${planet.id}`} activePlanet={activePlanet} />
       ))}
+      <div className="asteroidBelt">
+        <div className="asteroidBelt-before" style={{ boxShadow: asteroidsBackground }}></div>
+      </div>
     </motion.div>
   );
 };
