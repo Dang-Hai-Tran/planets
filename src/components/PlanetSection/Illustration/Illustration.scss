@@ -1,15 +1,15 @@
 .illustration__container {
   height: 100vw;
-  max-height: 30.4rem;
+  max-height: 30rem;
   padding: 0 2.4rem;
   z-index: 5;
   @media (min-width: 768px) {
     grid-area: illustration;
-    max-height: 46rem;
+    max-height: 50rem;
     padding: 0;
   }
   @media (min-width: 1025px) {
-    max-height: 75.4rem;
+    max-height: 70rem;
   }
   .image-container {
     position: relative;
@@ -40,6 +40,7 @@
     }
     @media (min-width: 1025px) {
       max-width: var(--desktopImgWidth);
+      background-size: 70%;
       .image-before {
         top: 66%;
       }
@@ -55,7 +56,7 @@
       }
       100% {
         opacity: 1;
-        transform: translateX(0) scale(1) rotate(0);
+        transform: translateY(0) scale(1) rotate(0);
       }
     }
   }

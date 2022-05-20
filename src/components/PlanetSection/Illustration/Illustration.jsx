@@ -1,7 +1,7 @@
 import React from 'react';
 import { illustrationContainerVariants } from '../../../constants/containerVariants';
 import { motion } from 'framer-motion';
-import './Illustation.scss';
+import './Illustration.scss';
 
 const Illustration = ({ planetData, currentData, isChanging }) => {
   let imageStyle = {
@@ -11,11 +11,11 @@ const Illustration = ({ planetData, currentData, isChanging }) => {
     '--desktopImgWidth': planetData.desktopImgWidth,
   };
   if (isChanging) {
-    imageStyle = { ...imageStyle, animation: 'imageSwap 2000ms ease' };
+    imageStyle = { ...imageStyle, animation: 'imageSwap 1500ms ease' };
   }
 
   const currentGeo = currentData.geo;
-  const imageBeforeStyle = currentGeo && { backgroundImage: `url(${currentGeo})` };
+  const imageBeforeStyle = currentGeo ? { backgroundImage: `url(${currentGeo})` } : null;
   return (
     <motion.div
       className="illustration__container"

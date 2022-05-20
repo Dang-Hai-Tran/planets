@@ -10,7 +10,7 @@ export const illustrationContainerVariants = {
     scale: 1,
     rotate: 0,
     x: 0,
-    transition: { delay: 1, duration: 1.5 },
+    transition: { delay: 0.5, duration: 1.5 },
   },
   exit: {
     opacity: 0,
@@ -29,7 +29,7 @@ export const introContainerVariants = {
   visible: {
     opacity: 1,
     x: 0,
-    transition: { delay: 1.5, duration: 1.5 },
+    transition: { delay: 0.5, duration: 1.5 },
   },
   exit: {
     opacity: 0,
@@ -46,7 +46,7 @@ export const infoContainerVariants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { delay: 1.5, duration: 1.5 },
+    transition: { delay: 0.5, duration: 1.5 },
   },
   exit: {
     opacity: 0,
@@ -63,7 +63,7 @@ export const tabsContainerVariants = {
   visible: {
     opacity: 1,
     x: 0,
-    transition: { delay: 1.5, duration: 1.5 },
+    transition: { delay: 0.5, duration: 1.5 },
   },
   exit: {
     opacity: 0,

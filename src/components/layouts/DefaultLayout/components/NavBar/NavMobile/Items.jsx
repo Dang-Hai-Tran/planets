@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { planets } from '../../../../../../constants/data';
 import './Items.scss';
-import Icon from '../Icon';
+import Icon from '../../../../../Icon';
 
 const Items = ({ restoreToDefault }) => {
   return (

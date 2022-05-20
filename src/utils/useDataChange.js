@@ -6,7 +6,7 @@ const useDataChange = (data) => {
   const [currentTab, setCurrentTab] = useState('overview');
   const prevTab = useRef('overview');
   const isTransitioned = useRef(true);
-  const transitionDuration = 1000;
+  const transitionDuration = 1500;
   const halfTransitionDuration = transitionDuration / 2;
 
   /**

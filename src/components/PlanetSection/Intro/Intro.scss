@@ -1,0 +1,98 @@
+.intro__container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 0 2.4rem;
+  margin-bottom: 2.8rem;
+  @media (min-width: 768px) {
+    grid-area: intro;
+    align-items: start;
+    padding: 0;
+  }
+  @media (min-width: 1025px) {
+    align-self: end;
+    margin: 6rem 0 3.9rem 0;
+  }
+  .intro__title {
+    color: var(--color-white);
+    font-size: 4rem;
+    font-family: var(--font-secondary);
+    font-weight: 500;
+    line-height: 100%;
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+    @media (min-width: 768px) {
+      font-size: 4.8rem;
+      margin-bottom: 2.4rem;
+    }
+    @media (min-width: 1025px) {
+      font-size: 8rem;
+      margin-bottom: 3.4rem;
+    }
+  }
+  .intro__text {
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+    color: var(--color-whiteAlpha75);
+    text-align: center;
+    margin-bottom: 1rem;
+    max-width: 50rem;
+    @media (min-width: 768px) {
+      text-align: left;
+      margin-bottom: 2rem;
+      max-width: unset;
+    }
+    @media (min-width: 1025px) {
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+    @keyframes textSwap {
+      0% {
+        opacity: 1;
+        transform: scaleY(1);
+      }
+      50% {
+        opacity: 0;
+        transform: scaleY(1.2);
+      }
+      100% {
+        opacity: 1;
+        transform: scaleY(1);
+      }
+    }
+  }
+  .source__container {
+    display: flex;
+    gap: 5px;
+    span {
+      color: var(--color-grayLight);
+      font-size: 1.3rem;
+      line-height: 2.5rem;
+      @media (min-width: 1025px) {
+        font-size: 1.6rem;
+      }
+    }
+    a {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 1.4rem;
+      font-weight: 600;
+      line-height: 2.5rem;
+      text-decoration: underline;
+      color: var(--color-grayLight);
+      &:focus {
+        outline: none;
+      }
+      &:focus-visible {
+        outline: 2px dashed var(--planetSectionColor);
+        outline-offset: 2px;
+      }
+      @media (min-width: 1025px) {
+        font-size: 1.6rem;
+        gap: 8px;
+      }
+    }
+  }
+}

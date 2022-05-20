@@ -10,13 +10,13 @@ const Home = ({ activePlanet }) => {
     hidden: {
       opacity: 0,
       scale: 6,
-      rotate: '-40deg',
+      rotate: '-60deg',
     },
     visible: {
       opacity: 1,
       scale: 1,
       rotate: 0,
-      transition: { delay: 1, duration: 3 },
+      transition: { delay: 1, duration: 2 },
     },
     exit: {
       opacity: 0,

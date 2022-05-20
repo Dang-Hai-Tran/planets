@@ -4,7 +4,7 @@ const useToggleMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isExpand, setIsExpand] = useState(false);
   const [isTransitioned, setIsTransitioned] = useState(true);
-  let transitionDuration = 1000;
+  let transitionDuration = 1500;
   let tableBreakpoint = 768;
 
   // Function to toggle showMenu() and closeMenu() depending on isOpen state. It doesn't run until isTransitioned is true
